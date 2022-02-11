@@ -64,7 +64,7 @@ form{
 
 
 /* CSS */
-.button-17 {
+.btn {
   align-items: center;
   appearance: none;
   background-color: #fff;
@@ -98,17 +98,17 @@ form{
   z-index: 0;
 }
 
-.button-17:hover {
+.btn:hover {
   background: #F6F9FE;
   color: #634F39;
 }
 
-.button-17:active {
+.btn:active {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
 
-.button-17:focus {
+.btn:focus {
   outline: none;
   border: 2px solid #634F39;
 }
