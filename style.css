@@ -1,0 +1,55 @@
+body{
+    background-color: #FFFBEB;
+}
+
+#list{
+    font-family: Karla;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+
+}
+
+form{
+    position: relative;
+}
+
+#input-field{
+    flex: 100%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background: #FFFBEB;
+    background-color: #FFFBEB;
+    border-color: white;
+    border-bottom: 1px solid #725A3D;
+    font-family: Karla;
+    font-weight: bold;
+}
+
+.form-control:focus{
+    background: #FFFBEB;
+    border: none;
+    border-color: #FFFBEB;
+    color: black;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+
+}
+.form-control:active{
+    outline: none;
+    background-color: #FFFBEB;
+}
+.form-control{
+    border: none;
+    background-color: #FFFBEB;
+    color: #634F39;
+    ;
+}
+
+
+.d-flex{
+    margin-left: 3%;
+    margin-top: 3%;
+}
