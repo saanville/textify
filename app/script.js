@@ -7,19 +7,33 @@ console.log("Button Clicked");
 
 
 
-    //alert("Hello! I am an alert box!");
-    const ins = document.getElementById("text").value;
-    //console.log(ins);
-    const url = "http://23.99.194.19:5000/get-text?ins=" + ins; 
-    console.log(url);
-//     // fetch data as text from url and display in alert
-    fetch(url)
-    .then(response => response.text())
-    .then((response) => {
-        alert(ins + response);
-        console.log(ins + response);
-    })
-    .catch(err => console.log(err))
+//     //alert("Hello! I am an alert box!");
+     const ins = document.getElementById("text").value;
+//     //console.log(ins);
+//     const url = "http://23.99.194.19:5000/get-text?ins=" + ins; 
+//     console.log(url);
+// //     // fetch data as text from url and display in alert
+//     fetch(url)
+//     .then(response => response.text())
+//     .then((response) => {
+//         alert(ins + response);
+//         console.log(ins + response);
+//     })
+//     .catch(err => console.log(err))
+
+
+
+    const Http = new XMLHttpRequest();
+const url='http://23.99.194.19:5000/get-text?ins=' + ins;
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
+
+
+
 }
 
 
